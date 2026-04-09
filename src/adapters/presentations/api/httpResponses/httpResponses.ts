@@ -1,21 +1,21 @@
-import { HttpResponse } from "../../../interfaces/http";
+import { type HttpResponse } from "../../../interfaces/http";
 import { ServerError } from "../errors/server-error";
 import { UnauthorizedError } from "../errors/unauthorized-error";
 
 export const badRequest = (error: Error): HttpResponse => ({
   statusCode: 400,
-  body: error,
-});
+  body: error
+})
 
 export const serverError = (error: Error): HttpResponse => ({
   statusCode: 500,
-  body: new ServerError(error.stack as string),
-});
+  body: new ServerError(error.stack)
+})
 
 export const created = (data: any): HttpResponse => ({
   statusCode: 201,
-  body: data,
-});
+  body: data
+})
 export const noContent = (): HttpResponse => ({
-  statusCode: 204,
-});
+  statusCode: 204
+})
