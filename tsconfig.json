@@ -26,7 +26,7 @@
 
     /* Módulos */
     "module": "commonjs",                                /* Especifique qual código do módulo é gerado. */
-    // "rootDir": "./",                                  /* Especifique a pasta raiz em seus arquivos de origem. */
+    "rootDir": "./src",                                  /* Especifique a pasta raiz em seus arquivos de origem. */
     // "moduleResolution": "node10",                     /* Especifique como o TypeScript procura um arquivo de um determinado especificador de módulo. */
     // "baseUrl": "./",                                  /* Especificar o diretório base para resolver nomes de módulos não relativos. */
     // "paths": {},                                      /* Especificar um conjunto de entradas que remapeiem importações para locais de pesquisa adicionais. */
